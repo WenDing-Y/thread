@@ -3,6 +3,7 @@ package com.haut.thread;
 /**
  * @author xxx_xx
  * @date 2017/12/16
+ * volatile 不能保证复合操作的原子操作
  */
 public class AccountingVol implements Runnable {
 
