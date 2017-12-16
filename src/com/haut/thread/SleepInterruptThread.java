@@ -3,6 +3,8 @@ package com.haut.thread;
 /**
  * @author xxx_xx
  * @date 2017/12/16
+ * InterruptException 异常指的是当程序 sleep时，这个异常就会产生，当前实例中
+ * 在中断处理中，我们再次中断自己，保证程序安全退出
  */
 public class SleepInterruptThread {
 
