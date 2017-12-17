@@ -3,6 +3,7 @@ package com.haut.thread;
 /**
  * @author xxx_xx
  * @date 2017/12/17
+ * 正确的加锁
  */
 public class BadLockOnInteger implements Runnable {
 
