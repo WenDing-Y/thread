@@ -59,12 +59,13 @@ public class ThreadPerformance {
             totalTime += futures[i].get();
         }
         System.out.println("多线程访问同一个Random实例" + totalTime);
-        totalTime = 0;
+
         for (int i = 0; i < THREAD_COUNT; i++) {
             futures[i] = (Future<Long>) executorService.submit(new RndTask(1));
             totalTime += futures[i].get();
         }
         System.out.println("每个线程使用一个Random实例" + totalTime);
+        executorService.shutdown();
     }
 
 
